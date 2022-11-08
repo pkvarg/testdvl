@@ -1,0 +1,15 @@
+form(method='POST' action='send#contact')
+  label.form-label(for='name') Meno
+  input.form-control(type='text' name='name' required='required')
+  label.form-label(for='email') Email
+  input.form-control(type='email' name='email' required='required')
+  label.form-label(for='phone') Telefón
+  input.form-control(type='text' name='phone' required='required')
+  label.form-label(for='message') Správa
+  textarea.form-control(rows='5' name='message' required='required')
+  .form-check.my-3
+    input#flexCheckDefault.form-check-input(type='checkbox', value='' required='required')
+    label.form-check-label(for='flexCheckDefault') Súhlasím so spracovaním údajov
+  .cf-turnstile(data-sitekey="0x4AAAAAAABImriFtVz8zARK" data-callback="javascriptCallback")
+  
+  button.btn.btn-beige.my-3(type='submit') Odoslať

@@ -1,0 +1,90 @@
+doctype html
+html 
+  head
+   block head
+    link(rel='shorcut icon' type='image/png' href='/public/img/wrenches.png')
+    link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' type='text/css' href='/public/css/styles.css')
+    link(rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lora:300,300i,700')
+    title DVL Construct
+    
+    
+  body 
+
+  include _header
+
+  block content 
+
+    #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
+      //- .carousel-indicators
+      //-   button.active(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='0' aria-current='true' aria-label='Slide 1')
+      //-   button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='1' aria-label='Slide 2')
+      //-   button(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide-to='2' aria-label='Slide 3')
+      .carousel-inner
+        .carousel-item.active(data-bs-interval="7000")
+          img.carousel-img(src='/public/img/parket.jpg' alt='...')
+          .carousel-caption.d-none.d-md-block
+            h1 Parkety
+            p Some representative placeholder content for the first slide.
+        .carousel-item(data-bs-interval="7000")
+          img.carousel-img(src='/public/img/door.jpg' alt='...')
+          .carousel-caption.d-none.d-md-block
+            h1 Dvere
+            p Some representative placeholder content for the second slide.
+        .carousel-item(data-bs-interval="7000")
+          img.carousel-img(src='/public/img/tile.jpg' alt='...')
+          .carousel-caption.d-none.d-md-block
+            h1 Dla&zcaron;ba
+            p Some representative placeholder content for the third slide.
+      //- button.carousel-control-prev(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='prev')
+      //-   span.carousel-control-prev-icon(aria-hidden='true')
+      //-   span.visually-hidden Previous
+      //- button.carousel-control-next(type='button' data-bs-target='#carouselExampleCaptions' data-bs-slide='next')
+      //-   span.carousel-control-next-icon(aria-hidden='true')
+      //-   span.visually-hidden Next
+    #services  
+    section.section-1
+      .container.add-fluid
+        div
+          .sluzby
+            .sluzby-logo
+              img.sluzby-img-logo(src='/public/img/wrenches.png' alt='')
+              h1.services-title Naše služby
+            .row
+              .col-lg-6
+                .sluzby-left
+                  i.bi.bi-pencil-square
+                    span.sluzby-left-title Parkety
+                  i.bi.bi-pencil-square
+                    span.sluzby-left-title Zárubne
+                  i.bi.bi-pencil-square
+                    span.sluzby-left-title Dlažby
+                  i.bi.bi-pencil-square
+                    span.sluzby-left-title Montáže
+              .col-lg-6
+                .sluzby-right
+                  img.sluzby-right-img(src='/public/img/tools.jpg')
+    section#contact.section-2
+      .container.add-fluid
+        .contact
+          h3 Napíšte nám
+        
+          h1.contact-msg #{msg} 
+          .container.add-fluid
+            include _formFragment
+  include _cks
+  include _footer 
+
+
+  script(src="/node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous")
+  script(src="/node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous")
+  
+  script(src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer) 
+  script(src='/public/cookies.js') 
+
+
+  //- script(function() {
+  //-   document.getElementById("formContainer").include _formfragment})
+  
