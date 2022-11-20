@@ -163,6 +163,17 @@ img.sluzby-right-img {
   padding-top: 30px;
 }
 
+.contact-warning {
+  color: red;
+  font-size: 35px;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* footer */
 
 footer {
