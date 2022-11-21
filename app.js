@@ -3,6 +3,8 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const nodemailer = require('nodemailer')
 
+// View engine setup
+
 const app = express()
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
@@ -10,31 +12,25 @@ app.set('views', path.join(__dirname, 'views'))
 const dotenv = require('dotenv')
 const { AsyncLocalStorage } = require('async_hooks')
 
-dotenv.config({ path: './config.env' })
+dotenv.config({ path: './.config.env' })
 
-// View engine setup
-
-// app.set('view engine', 'pug')
 app.set(express.static(__dirname + '/public'))
 app.use(express.static(__dirname))
-
-// app.set('views', path.join(__dirname, 'views'))
 
 // Body parser, reading data from body into req.body
 // Body Parser Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
-// app.get('/', (req, res) => {
-//   res.render(path.join(__dirname, 'views', 'base.pug'))
-// })
 const sec01 = process.env.TURN_SECRET
 const sec02 = process.env.TURN_SITE
+let clicks = 0
 
 app.get('/', (req, res) => {
   res.status(200).render('base', {
     sec01: sec01,
     sec02: sec02,
+    clicks: clicks,
   })
 })
 
@@ -109,8 +105,10 @@ app.post('/send', (req, res) => {
         })
     })
   } else {
+    clicks = clicks + 1
     res.render(path.join(__dirname, 'views', 'base.pug'), {
       warning: 'Neodoslané, kontaktujte nás telefonicky alebo mailom!',
+      clicks: clicks,
     })
   }
 })
