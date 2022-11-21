@@ -35,15 +35,21 @@ app.get('/', (req, res) => {
 })
 
 app.get('/gdpr', (req, res) => {
-  res.render(path.join(__dirname, 'views', '_gdpr.pug'))
+  res.status(200).render('_gdpr')
 })
 
 app.get('/tradeRules', (req, res) => {
-  res.render(path.join(__dirname, 'views', '_tradeRules.pug'))
+  res.status(200).render('_tradeRules')
 })
 
 app.get('/projects', (req, res) => {
-  res.render(path.join(__dirname, 'views', '_projects.pug'))
+  res.status(200).render('_projects')
+})
+
+app.get('/counter', (req, res) => {
+  res.status(200).render('_counter', {
+    counter: clicks,
+  })
 })
 
 const PORT = process.env.PORT || 5000
