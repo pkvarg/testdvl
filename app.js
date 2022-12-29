@@ -90,9 +90,9 @@ app.post('/send', (req, res) => {
     let mailOptions = {
       from: `kvalitnamontaz.sk <${process.env.EMAIL_FROM}>`, // sender address
       to: `${req.body.email}`,
-      bcc: 'info@pictusweb.sk',
+      bcc: `info@kvalitnamontaz.sk`,
       // list of receivers
-      subject: 'kvalitnamontaz.sk Kontakt', // Subject line
+      subject: 'kvalitnamontaz.sk', // Subject line
       text: 'Hello world?', // plain text body
       html: output, // html body
     }
