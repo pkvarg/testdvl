@@ -32,6 +32,7 @@ img.logo {
 .dvl-brand {
   font-size: xx-large;
   margin-left: 15%;
+  opacity: 999 !important;
 }
 
 .dvl-brand:hover {
@@ -39,13 +40,15 @@ img.logo {
 }
 
 .dvl-bg {
-  /* background-color: #a10e00; */
-  background-color: #cabdb8;
+  /* background-color: #cabdb8; */
+  background-color: #ae9c94;
+  opacity: 0.9;
 }
 
 a.nav-link {
   font-size: larger;
   color: inherit;
+  opacity: 999 !important;
 }
 
 a.nav-link:hover {
@@ -174,6 +177,37 @@ img.sluzby-right-img {
   display: none;
 }
 
+.scrollToTopBtn {
+  border-radius: 50%;
+  font-size: 1.5rem;
+  background-color: #ae9c94;
+  color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 330px;
+  right: 50px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide it at first */
+  /* UPDATE: remove display none */
+  /* 
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease;
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* footer */
 
 footer {
@@ -189,10 +223,23 @@ footer {
 
 .rad {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.fourCols {
+  /* margin-left: 5%; */
+  width: 20%;
+  position: relative;
+}
+
+.fourCols:last-child {
+  width: 5%;
 }
 
 .copyright {
-  margin-left: 60px;
+  /* margin-left: 60px; */
   padding-top: 40px;
   display: flex;
   flex-direction: column;
@@ -220,11 +267,14 @@ i.bi.bi-r-square {
 }
 
 .firma {
-  margin-left: 60px;
   padding-top: 40px;
   display: flex;
   flex-direction: column;
   font-size: larger;
+}
+
+.firma.contact {
+  margin-left: 60px;
 }
 .firma p {
   margin-bottom: 0;
@@ -244,8 +294,10 @@ i.bi.bi-r-square {
 }
 
 .footer-logo-img {
-  margin-left: 50%;
-  width: 15%;
+  /* margin-left: 50%; */
+  width: 120%;
+  position: absolute;
+  right: 5%;
 }
 
 .gdpr {
@@ -256,8 +308,8 @@ i.bi.bi-r-square {
 #consent-popup {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 15%;
+  right: 15%;
   padding: 2rem 8rem;
   background-color: #fff;
   transition: opacity 1s ease;
@@ -343,7 +395,8 @@ i.bi.bi-r-square {
   }
 
   label.form-label,
-  input.form-control {
+  input.form-control,
+  textarea.form-control {
     font-size: 60px;
   }
 
@@ -352,9 +405,34 @@ i.bi.bi-r-square {
     font-size: 60px;
   }
 
+  .scrollToTopBtn {
+    font-size: 65px;
+    border: 3px solid #000;
+    width: 100px;
+    height: 100px;
+  }
+
+  .showBtn {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ftr-width {
+    max-width: 75%;
+  }
+
   .rad {
     display: flex;
     flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .fourCols {
+    width: 100%;
+  }
+
+  .firma.contact {
+    margin-left: 0;
   }
   .footer-logo {
     display: none;
@@ -369,11 +447,16 @@ i.bi.bi-r-square {
   }
 
   .cookies p {
-    font-size: 50px;
-    text-align: justify;
+    font-size: 40px;
+    text-align: left;
   }
   .cookies a {
-    font-size: 65px;
+    font-size: 45px;
+  }
+
+  #consent-popup {
+    left: 0;
+    right: 0;
   }
 
   .gdpr h1 {

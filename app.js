@@ -68,7 +68,7 @@ app.post('/send', (req, res) => {
     <h2>Text správy:</h2>
     <h3>${req.body.message}</h3>
     <h2>Ďakujeme Vám za správu, budeme Vás kontaktovať telefonicky.</h2>
-    <p>DVL Construct</p>
+    <p>kvalitnamontaz.sk</p>
   `
 
     // create reusable transporter object using the default SMTP transport
@@ -88,11 +88,11 @@ app.post('/send', (req, res) => {
 
     // setup email data with unicode symbols
     let mailOptions = {
-      from: `DVL Construct <${process.env.EMAIL_FROM}>`, // sender address
+      from: `kvalitnamontaz.sk <${process.env.EMAIL_FROM}>`, // sender address
       to: `${req.body.email}`,
       bcc: 'info@pictusweb.sk',
       // list of receivers
-      subject: 'DVL Construct Kontakt', // Subject line
+      subject: 'kvalitnamontaz.sk Kontakt', // Subject line
       text: 'Hello world?', // plain text body
       html: output, // html body
     }
