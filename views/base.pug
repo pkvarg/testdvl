@@ -25,46 +25,71 @@ html
   include _header
 
   block content 
-
+    
     #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
+        .banner-text
+          img.logo(src='/public/img/TD-logo.png')
+          h1 KVALITNÁ MONTÁŽ PODLAHY
+          h3 Všetky podlahárske práve v Bratislave a okolí
+          a.call-us(href='tel:+421908564435') Zavolaj nám 0908564435 
         .carousel-item.active(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/parket.jpg' alt='...')
-          .carousel-caption.d-none.d-md-block
-            h1 Parkety
-            p Some representative placeholder content for the first slide.
+          img.carousel-img(src='/public/img/parket.jpg' alt='author-jurre-houtkamp-on-unsplash')
+          //- .carousel-caption.d-none.d-md-block
+          //-   h1 Parkety
+          //-   p Some representative placeholder content for the first slide.
         .carousel-item(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/door.jpg' alt='...')
-          .carousel-caption.d-none.d-md-block
-            h1 Dvere
-            p Some representative placeholder content for the second slide.
+          img.carousel-img(src='/public/img/door.jpg' alt='author-engin-akyurt-on-unsplash')
+          //- .carousel-caption.d-none.d-md-block
+          //-   h1 Dvere
+          //-   p Some representative placeholder content for the second slide.
         .carousel-item(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/tile.jpg' alt='...')
-          .carousel-caption.d-none.d-md-block
-            h1 Dla&zcaron;ba
-            p Some representative placeholder content for the third slide.
+          img.carousel-img(src='/public/img/prep.jpg' alt='author-daniel-mccullough-on-unsplash')
+          //- .carousel-caption.d-none.d-md-block
+          //-   h1 Dla&zcaron;ba
+          //-   p Some representative placeholder content for the third slide.
+          
     #services  
     section.section-1
-      .container.add-fluid
-        div
-          .sluzby
-            .sluzby-logo
-              img.sluzby-img-logo(src='/public/img/wrenches.png' alt='')
-              h1.services-title Naše služby
-            .row
-              .col-lg-6
-                .sluzby-left
-                  i.bi.bi-pencil-square
-                    span.sluzby-left-title Parkety
-                  i.bi.bi-pencil-square
-                    span.sluzby-left-title Zárubne
-                  i.bi.bi-pencil-square
-                    span.sluzby-left-title Dlažby
-                  i.bi.bi-pencil-square
-                    span.sluzby-left-title Montáže
-              .col-lg-6
-                .sluzby-right
-                  img.sluzby-right-img(src='/public/img/tools.jpg')
+      .container 
+        .three-services
+          .service
+            img(src='/public/img/stock-photo-planks-of-laminate-floor-and-tools-to-install-them-1331890628.jpg' alt='')
+            h2 Všetky podlahárske práce 
+            p Postaráme sa o pokládku Vašej laminátovej, vinylovej, kompozitnej či drevenej podlahy. Plávajúcim spôsobom aj lepením.
+          .service
+            img(src='/public/img/stock-photo-man-worker-hands-installing-timber-laminate-floor-precise-finishing-using-spirit-level-wooden-1888813690.jpg' alt='')
+            h2 Prípravné a doplnkové práce 
+            p Potrebujete pripraviť priestor pred pokládkou novej podlahy? Odstránime starú podlahovú krytinu. Zabezbečíme nivelizáciu a ďalšie prípravy podkladu.
+          .service
+            img(src='/public/img/prep2.jpg' alt='')
+            h2 Práce na mieru 
+            p Potrebujete obloženie schodov, stien či stropov? Dokončovacie alebo opravné práce? Nalepenie a nastrelenie soklových líšt? Stačí zavolať.  
+        a.call-us-body(href='tel:+421908564435') Zavolať 0908564435 
+    section.section-reviews
+      .review-cards
+        .review-single
+          img(src='/public/img/google-icon.jpg' alt='')
+          h3.name Peter 
+          h6.from Trnávka 
+          p.stars ⭐️⭐️⭐️⭐️⭐️
+          p.review Rýchle jasné jednanie. Dodržané slovo, termín aj cena. Odporúčam a budem volať znova.
+        .review-single
+          img(src='/public/img/google-icon.jpg' alt='')
+          h3.name Peter 
+          h6.from Trnávka 
+          p.stars ⭐️⭐️⭐️⭐️⭐️
+          p.review Rýchle jasné jednanie. Dodržané slovo, termín aj cena. Odporúčam a budem volať znova.
+        .review-single
+          img(src='/public/img/google-icon.jpg' alt='')
+          h3.name Peter 
+          h6.from Trnávka 
+          p.stars ⭐️⭐️⭐️⭐️⭐️
+          p.review Rýchle jasné jednanie. Dodržané slovo, termín aj cena. Odporúčam a budem volať znova.    
+
+
+
+
     section#contact.section-2
       .container.add-fluid
         .contact
