@@ -1,12 +1,14 @@
 
 form(method='POST' action='send#contact')
-  label.form-label(for='name') Meno
+  label.form-label(for='name') Meno <sup>*</sup>
   input.form-control(type='text' name='name' required='required')
+  label.form-label(for='address') Mesto a adresa <sup>*</sup>
+  input.form-control(type='text' name='address' required='required')
   label.form-label(for='email') Email
   input.form-control(type='email' name='email' required='required')
-  label.form-label(for='phone', ) Telefón
+  label.form-label(for='phone', ) Telefón <sup>*</sup>
   input.form-control(type='text' name='phone' required='required')
-  label.form-label(for='message') Správa
+  label.form-label(for='message') Popíšte čo potrebujete <sup>*</sup>
   textarea.form-control(rows='5' name='message' required='required')
   .form-check.my-3
     input#flexCheckDefault.form-check-input(type='checkbox', value='' required='required')
@@ -16,4 +18,4 @@ form(method='POST' action='send#contact')
   input.form-control.hidden(type='text' name='password2' value=sec02)
 
   
-  button.btn.btn-beige.my-3(type='submit') Odoslať
+  button.btn.btn-send.my-3(type='submit') Odoslať

@@ -62,12 +62,13 @@ app.post('/send', (req, res) => {
     <h2>Kontaktné údaje</h2>
     <ul>
       <li>Meno: ${req.body.name}</li>
+      <li>Mesto a adresa: ${req.body.address}</li>
       <li>Email: ${req.body.email}</li>
       <li>Telefón: ${req.body.phone}</li>
     </ul>
     <h2>Text správy:</h2>
     <h3>${req.body.message}</h3>
-    <h2>Ďakujeme Vám za správu, budeme Vás kontaktovať telefonicky.</h2>
+    <h2>Ďakujeme Vám za správu, budeme Vás kontaktovať telefonicky do 24 hodín.</h2>
     <p>kvalitnamontaz.sk</p>
   `
 

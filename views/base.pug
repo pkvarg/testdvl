@@ -28,14 +28,20 @@ html
     
     #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
-        .banner-box
+        .banner-box.no-mobile
           .banner-text
-            img.logo(src='/public/img/TD-logo.png')
+            a(href='/')
+              img.logo(src='/public/img/TD-logo.png')
             h1 KVALITNÁ MONTÁŽ PODLAHY
             h3 Všetky podlahárske práve v Bratislave a okolí
             a.call-us(href='tel:+421908564435') Zavolať 0908564435 
         img.carousel-img
-  
+        .banner-box.mobile-only
+          .banner-text.mobile-only
+            h1 KVALITNÁ MONTÁŽ PODLAHY
+            h3 Všetky podlahárske práve v Bratislave a okolí
+            a.call-us(href='tel:+421908564435') Zavolať 0908564435 
+        //- img.carousel-img
         //- .carousel-item.active(data-bs-interval="7000")
           //- img.carousel-img(src='/public/img/stock-photo-man-installing-new-laminated-wooden-floor-206436007.jpg' alt='')
           //- img.carousel-img(src='/public/img/parket.jpg' alt='author-jurre-houtkamp-on-unsplash')
@@ -57,10 +63,11 @@ html
             h2 Prípravné a doplnkové práce 
             p Potrebujete pripraviť priestor pred pokládkou novej podlahy? Odstránime starú podlahovú krytinu. Zabezbečíme nivelizáciu a ďalšie prípravy podkladu.
           .service
-            img(src='/public/img/prep2.jpg' alt='')
+            img(src='/public/img/stock-photo-samples-of-wooden-flooring-samplers-of-laminates-tiles-and-baseboards-with-carpenter-tools-on-2164147399.jpg' alt='')
             h2 Práce na mieru 
             p Potrebujete obloženie schodov, stien či stropov? Dokončovacie alebo opravné práce? Nalepenie a nastrelenie soklových líšt? Stačí zavolať.  
         a.call-us-body(href='tel:+421908564435') Zavolať 0908564435 
+    #reviews    
     section.section-reviews
       .review-cards
         .review-single
@@ -129,14 +136,15 @@ html
           .about-text
             h3 Sme mladý a šikovný tím remeselníkov s bohatými skúsenosťami najmä však s nadšením pre svoju profesiu. Vaša spokojnosť je prvoradá. Kvalitne odvedená práca je samozrejmosťou.
             h4 Vaša kvalitná montáž. 
-      a.call-us-summary(href='tel:+421908564435') Zavolať 0908564435 
+      a.call-us-summary.mobile(href='tel:+421908564435') Zavolať 0908564435 
       
 
 
     section#contact.section-2
       .container.add-fluid
         .contact
-          h3 Napíšte nám
+          h3 Kontaktujte nás. 
+          h3 Všetko ostatné vyriešime za Vás.
           h1.contact-msg #{msg} 
           h1.contact-warning #{warning}
           .container.add-fluid
