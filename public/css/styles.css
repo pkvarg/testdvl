@@ -614,6 +614,7 @@ i.bi.bi-r-square {
   .banner-text.mobile-only h3 {
     margin-left: 15px;
     font-size: 40px;
+    text-align: center;
   }
 
   .call-us {
@@ -655,7 +656,7 @@ i.bi.bi-r-square {
 
   .service p {
     font-size: 50px;
-    line-height: 50px;
+    line-height: 60px;
     text-align: left;
     padding-bottom: 30px;
   }
@@ -672,11 +673,13 @@ i.bi.bi-r-square {
   .review-cards {
     flex-direction: column;
     align-items: center;
+    padding-top: 23%;
   }
 
   .review-single {
-    width: 56%;
+    width: 65%;
     height: 600px;
+    margin-bottom: 120px;
   }
 
   .review-single img {
@@ -737,7 +740,7 @@ i.bi.bi-r-square {
   }
 
   .section-about {
-    height: 1400px;
+    height: 1500px;
   }
 
   .about-box {
