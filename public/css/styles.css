@@ -19,10 +19,8 @@ body {
   margin-left: auto;
 }
 img.logo {
-  width: 12%;
+  width: 30%;
   position: absolute;
-  /* left: 20px;
-  top: -40px; */
   left: 20px;
   top: 24px;
 }
@@ -112,6 +110,13 @@ span.navbar-toggler-icon {
   padding: 15px;
   border: 1px solid #f4eee7;
   border-radius: 15px;
+}
+
+a.call-us:hover,
+a.call-us-summary:hover,
+a.call-us-body:hover {
+  color: #fff;
+  background-color: #fe9400;
 }
 
 .carousel {
@@ -233,6 +238,63 @@ span.navbar-toggler-icon {
 
 p.review {
   padding: 20px;
+}
+
+.section-summary {
+  background-color: #a20e00;
+}
+
+.four-points {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.two-points {
+  padding-top: 100px;
+  padding-bottom: 60px;
+  color: #f0eceb;
+  margin-bottom: 60px;
+}
+
+.one-point {
+  display: flex;
+  flex-direction: row;
+  margin-top: 60px;
+}
+
+.one-point i {
+  font-size: 35px;
+}
+
+.one-point i.fa-solid.fa-face-smile {
+  font-size: 25px;
+}
+
+.one-point h3 {
+  font-size: 40px;
+  margin-left: 15px;
+  transform: translateY(-15%);
+}
+
+.point-description h6 {
+  margin-left: 9%;
+  font-size: 23px;
+  transform: translateY(-15px);
+}
+
+.call-us-summary {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 38%;
+  margin-top: 0px;
+  margin-bottom: 120px;
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 15px;
 }
 
 .sluzby {
