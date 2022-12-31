@@ -205,7 +205,8 @@ img.carousel-img {
 }
 
 .section-reviews {
-  background-color: #eea66b;
+  /* background-color: #eea66b; */
+  background-color: #fe9400;
   height: 800px;
 }
 
@@ -307,46 +308,36 @@ p.review {
   border-radius: 15px;
 }
 
-.sluzby {
-  margin-left: 30px;
-  margin-right: 30px;
+.section-about {
+  background-color: #adbbcb;
+  height: 700px;
 }
 
-.sluzby-logo {
-  display: flex;
-  flex-direction: row;
-  color: black;
+.about-box {
+  color: #fff;
+  padding-top: 120px;
+  margin-bottom: 60px;
 }
 
-img.sluzby-img-logo {
-  width: 4%;
-  margin-right: 15px;
-}
-
-.sluzby-left {
-  margin-top: 60px;
+.about-text {
+  border: 1px solid #fff;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  color: black;
+  align-items: center;
 }
 
-span.sluzby-left-title {
-  margin-left: 10px;
-  font-family: inherit;
-  font-size: 25px;
-  font-style: normal !important;
+.about-box h3 {
+  padding: 60px;
+  padding-bottom: 45px;
+  text-align: center;
+  font-size: 40px;
 }
 
-.sluzby-right {
-  display: flex;
-  flex-direction: column;
+.about-box h4 {
+  font-size: 37.5px;
+  padding-bottom: 45px;
 }
-
-img.sluzby-right-img {
-  width: 100%;
-}
-
 .section-2 {
   background-color: #fff;
   padding-bottom: 100px;
@@ -386,12 +377,12 @@ img.sluzby-right-img {
 .scrollToTopBtn {
   border-radius: 50%;
   font-size: 1.5rem;
-  background-color: #ae9c94;
-  color: #000;
+  background-color: #fe9400;
+  color: #fff;
   border: 1px solid #000;
   cursor: pointer;
-  width: 35px;
-  height: 35px;
+  width: 60px;
+  height: 60px;
   /* place it at the bottom right corner */
   position: fixed;
   bottom: 330px;
