@@ -28,26 +28,21 @@ html
     
     #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
-        .banner-text
-          img.logo(src='/public/img/TD-logo.png')
-          h1 KVALITNÁ MONTÁŽ PODLAHY
-          h3 Všetky podlahárske práve v Bratislave a okolí
-          a.call-us(href='tel:+421908564435') Zavolaj nám 0908564435 
-        .carousel-item.active(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/parket.jpg' alt='author-jurre-houtkamp-on-unsplash')
-          //- .carousel-caption.d-none.d-md-block
-          //-   h1 Parkety
-          //-   p Some representative placeholder content for the first slide.
-        .carousel-item(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/door.jpg' alt='author-engin-akyurt-on-unsplash')
-          //- .carousel-caption.d-none.d-md-block
-          //-   h1 Dvere
-          //-   p Some representative placeholder content for the second slide.
-        .carousel-item(data-bs-interval="7000")
-          img.carousel-img(src='/public/img/prep.jpg' alt='author-daniel-mccullough-on-unsplash')
-          //- .carousel-caption.d-none.d-md-block
-          //-   h1 Dla&zcaron;ba
-          //-   p Some representative placeholder content for the third slide.
+        .banner-box
+          .banner-text
+            img.logo(src='/public/img/TD-logo.png')
+            h1 KVALITNÁ MONTÁŽ PODLAHY
+            h3 Všetky podlahárske práve v Bratislave a okolí
+            a.call-us(href='tel:+421908564435') Zavolaj nám 0908564435 
+        img.carousel-img
+  
+        //- .carousel-item.active(data-bs-interval="7000")
+          //- img.carousel-img(src='/public/img/stock-photo-man-installing-new-laminated-wooden-floor-206436007.jpg' alt='')
+          //- img.carousel-img(src='/public/img/parket.jpg' alt='author-jurre-houtkamp-on-unsplash')
+        //- .carousel-item(data-bs-interval="7000")
+        //-   img.carousel-img(src='/public/img/door.jpg' alt='author-engin-akyurt-on-unsplash')
+        //- .carousel-item(data-bs-interval="7000")
+        //-   img.carousel-img(src='/public/img/prep.jpg' alt='author-daniel-mccullough-on-unsplash')
           
     #services  
     section.section-1

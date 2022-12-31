@@ -1,10 +1,8 @@
 body {
-  /* font-family: 'Gruppo', cursive; */
   font-size: 20px !important;
   font-family: 'Zilla Slab', serif;
-  /* color: #fff; */
   color: #000000e6;
-  background-color: #ae9c94 !important;
+  /* background-color: #ae9c94 !important; */
   position: relative;
 }
 
@@ -68,6 +66,11 @@ span.navbar-toggler-icon {
 
 /* Body */
 
+.banner-box {
+  display: flex;
+  justify-content: center;
+}
+
 .banner-text {
   background: rgb(173, 190, 210);
   background: linear-gradient(
@@ -80,7 +83,6 @@ span.navbar-toggler-icon {
   width: 900px;
   position: absolute;
   top: 35%;
-  left: 18.5%;
   z-index: 999;
 }
 
@@ -140,8 +142,16 @@ a.call-us-body:hover {
 }
 
 .carousel-img {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
+}
+
+img.carousel-img {
+  background-image: linear-gradient(to bottom, #aebac968, #ff910077),
+    url('../img/stock-photo-man-installing-new-laminated-wooden-floor-206436007.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .section-1 {
