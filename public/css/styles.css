@@ -174,14 +174,14 @@ img.carousel-img {
 .service h2 {
   margin-top: 20px;
   margin-left: 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .service p {
   width: 90%;
   margin-top: 15px;
   margin-left: 5px;
-  text-align: left;
+  text-align: center;
   font-size: 23px;
   line-height: 27px;
 }
@@ -673,7 +673,7 @@ i.bi.bi-r-square {
   .service p {
     font-size: 50px;
     line-height: 60px;
-    text-align: left;
+    text-align: center;
     padding-bottom: 30px;
   }
 
