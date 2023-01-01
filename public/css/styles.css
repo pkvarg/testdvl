@@ -88,6 +88,7 @@ span.navbar-toggler-icon {
   margin-top: 25px;
   margin-left: 33%;
   color: #000;
+  text-align: center;
 }
 
 .call-us {
@@ -101,6 +102,7 @@ span.navbar-toggler-icon {
   padding: 15px;
   border: 1px solid #f4eee7;
   border-radius: 15px;
+  text-align: center;
 }
 
 a.call-us:hover,
@@ -241,7 +243,7 @@ p.review {
 }
 
 .section-summary {
-  background-color: #a20e00;
+  background-color: #fe9400;
 }
 
 .four-points {
@@ -260,6 +262,7 @@ p.review {
 .one-point {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 60px;
 }
 
@@ -275,12 +278,14 @@ p.review {
   font-size: 40px;
   margin-left: 15px;
   transform: translateY(-15%);
+  text-align: center;
 }
 
 .point-description h6 {
   margin-left: 9%;
   font-size: 23px;
   transform: translateY(-15px);
+  text-align: center;
 }
 
 .call-us-summary {
@@ -718,11 +723,14 @@ i.bi.bi-r-square {
   }
 
   .one-point h3 {
-    font-size: 65px;
+    font-size: 80px;
+    transform: translateY(-5%);
+    line-height: 76px;
   }
 
   .point-description h6 {
-    font-size: 45px;
+    font-size: 55px;
+    margin-top: 30px;
   }
 
   .one-point i.fa-solid.fa-face-smile {
