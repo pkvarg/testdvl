@@ -571,6 +571,7 @@ i.bi.bi-r-square {
 }
 
 .cookies a {
+  margin-top: 3px;
   text-decoration: none;
   padding: 15px;
   background-color: #ff9000;

@@ -16,6 +16,7 @@ const storageType = cookieStorage
 const consentPropertyName = 'jdc_consent'
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName)
 const saveToStorage = () => storageType.setItem(consentPropertyName, true)
+const dontSaveToStorage = () => storageType.setItem(consentPropertyName, false)
 
 const win = window.location.pathname
 const home = '/'
@@ -29,8 +30,15 @@ if (win === home) {
       consentPopup.classList.add('hidden')
       consentPopup.remove()
     }
+    const dontAcceptFn = (event) => {
+      dontSaveToStorage(storageType)
+      consentPopup.classList.add('hidden')
+      consentPopup.remove()
+    }
     const acceptBtn = document.getElementById('accept')
+    const declineBtn = document.getElementById('decline')
     acceptBtn.addEventListener('click', acceptFn)
+    declineBtn.addEventListener('click', dontAcceptFn)
     console.log(shouldShowPopup(storageType))
     if (shouldShowPopup(storageType)) {
       setTimeout(() => {
@@ -44,6 +52,8 @@ if (win === home) {
 } else {
   consentPopup.remove()
 }
+
+// scroll to top btn
 
 var scrollToTopBtn = document.querySelector('.scrollToTopBtn')
 var rootElement = document.documentElement
