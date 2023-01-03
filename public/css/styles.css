@@ -106,6 +106,9 @@ span.navbar-toggler-icon {
   padding: 15px;
   border: 2px solid #fff;
   border-radius: 15px;
+  background-color: #039f2f;
+  color: #fff;
+  text-transform: uppercase;
 }
 
 .call-us h4:hover {
@@ -197,13 +200,15 @@ a.call-us-body:hover {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  color: #000;
+  color: #fff;
   font-size: 30px;
   margin-left: 38%;
   margin-top: 15px;
   padding: 15px;
-  border: 2px solid #fe9400;
+  border: 2px solid #fff;
   border-radius: 15px;
+  text-transform: uppercase;
+  background-color: #039f2f;
 }
 
 .section-reviews {
@@ -321,11 +326,13 @@ i.fa-solid {
   padding: 15px;
   border: 1px solid #fff;
   border-radius: 15px;
+  background-color: #039f2f;
+  text-transform: uppercase;
 }
 
 a.call-us-four-points:hover {
   color: #fff;
-  background-color: #ae9c94;
+  background-color: #fe9400;
 }
 
 .call-us-summary {
@@ -340,6 +347,8 @@ a.call-us-four-points:hover {
   padding: 15px;
   border: 1px solid #fff;
   border-radius: 15px;
+  background-color: #039f2f;
+  text-transform: uppercase;
 }
 
 .section-about {
@@ -381,14 +390,15 @@ a.call-us-four-points:hover {
 }
 
 .btn.btn-send {
-  background-color: #fe9400;
+  background-color: #039f2f;
+
   color: #fff;
   font-size: 25px;
   border-color: black;
 }
 
 .btn.btn-send:hover {
-  background-color: #039f2f;
+  background-color: #fe9400;
   color: #fff;
 }
 
