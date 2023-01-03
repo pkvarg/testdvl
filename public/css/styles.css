@@ -335,7 +335,7 @@ a.call-us-four-points:hover {
   color: #fff;
   font-size: 30px;
   margin-left: 38%;
-  margin-top: 0px;
+  margin-top: 5%;
   margin-bottom: 120px;
   padding: 15px;
   border: 1px solid #fff;
@@ -344,7 +344,6 @@ a.call-us-four-points:hover {
 
 .section-about {
   background-color: #adbbcb;
-  height: 700px;
 }
 
 .about-box {
@@ -713,10 +712,12 @@ i.bi.bi-r-square {
     padding-bottom: 30px;
   }
 
-  .call-us-body {
+  a.call-us-body {
     margin: 0;
     margin-top: 40px;
-    margin-left: 12%;
+    /* margin-left: 12%; */
+    display: flex;
+    justify-content: center;
     border: none;
     font-size: 55px;
     border: 1px solid #fff;
@@ -752,6 +753,10 @@ i.bi.bi-r-square {
   p.review {
     font-size: 35px;
     padding-bottom: 60px;
+  }
+
+  .section-summary {
+    padding-bottom: 100px;
   }
 
   .four-points {
@@ -792,9 +797,10 @@ i.bi.bi-r-square {
   }
 
   a.call-us-four-points {
-    margin-left: 14%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
     margin-top: 8%;
-    margin-bottom: 12%;
     font-size: 55px;
     text-align: center;
     padding: 10px;
@@ -811,7 +817,7 @@ i.bi.bi-r-square {
   }
 
   .section-about {
-    height: 1500px;
+    padding-bottom: 14%;
   }
 
   .about-box {
@@ -827,12 +833,12 @@ i.bi.bi-r-square {
 
   .call-us-summary.mobile {
     margin: 0;
-    margin-top: 40px;
-    margin-left: 26%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
     border: none;
     font-size: 55px;
     border: 1px solid #fff;
-    margin-bottom: 120px;
   }
 
   /* .sticky-lg-top {
