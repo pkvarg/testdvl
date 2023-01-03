@@ -391,12 +391,11 @@ a.call-us-four-points:hover {
 
 .btn.btn-send {
   background-color: #039f2f;
-
   color: #fff;
   font-size: 25px;
   border-color: black;
+  text-transform: uppercase;
 }
-
 .btn.btn-send:hover {
   background-color: #fe9400;
   color: #fff;
