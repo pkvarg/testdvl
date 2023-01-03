@@ -104,7 +104,7 @@ span.navbar-toggler-icon {
   width: fit-content;
   font-size: 45px;
   padding: 15px;
-  border: 2px solid #fe9400;
+  border: 2px solid #fff;
   border-radius: 15px;
 }
 
@@ -715,12 +715,11 @@ i.bi.bi-r-square {
   a.call-us-body {
     margin: 0;
     margin-top: 40px;
-    /* margin-left: 12%; */
     display: flex;
     justify-content: center;
     border: none;
     font-size: 55px;
-    border: 1px solid #fff;
+    border: 2px solid #fe9400;
   }
 
   .review-cards {
@@ -806,13 +805,13 @@ i.bi.bi-r-square {
     padding: 10px;
   }
 
-  .call-us-summary {
+  a.call-us-summary {
     margin: 0;
     margin-top: 40px;
     margin-left: 12%;
     border: none;
     font-size: 55px;
-    border: 1px solid #fff;
+    border: 2px solid #fe9400;
     margin-bottom: 120px;
   }
 
