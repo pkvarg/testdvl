@@ -23,8 +23,9 @@ body {
 img.logo {
   width: 30%;
   position: absolute;
-  left: 20px;
-  top: 24px;
+  left: 36%;
+  top: 1%;
+  z-index: 1000;
 }
 
 /* .sticky-lg-top {
@@ -61,51 +62,68 @@ span.navbar-toggler-icon {
 }
 
 .banner-text {
-  background: rgb(173, 190, 210);
+  /* background: rgb(173, 190, 210);
   background: linear-gradient(
     83deg,
     rgba(173, 190, 210, 1) 0%,
     rgba(174, 156, 148, 0.8183867296918768) 65%
+  ); */
+  background: rgb(158, 113, 72);
+  background: radial-gradient(
+    circle,
+    rgba(158, 113, 72, 1) 0%,
+    rgba(173, 190, 210, 0.6671043417366946) 0%
   );
   border-radius: 15px;
-  height: 265px;
-  width: 900px;
+  width: 45%;
   position: absolute;
-  top: 35%;
+  top: 22.5%;
   z-index: 999;
 }
 
-.banner-text h1 {
-  background-color: #ff9000;
-  padding: 20px;
-  border-radius: 5px;
-  margin-left: 30%;
+.banner-text h2 {
+  margin-top: 21%;
   color: #f4eee7;
   font-size: 35px;
+  text-align: center;
+}
+
+.banner-text h1 {
+  color: #f4eee7;
+  font-size: 60px;
+  text-align: center;
 }
 
 .banner-text h3 {
-  margin-top: 25px;
-  margin-left: 33%;
   color: #000;
   text-align: center;
 }
 
 .call-us {
-  display: inline-block;
+  width: max-content;
   text-decoration: none;
   cursor: pointer;
   color: #000;
   font-size: 30px;
-  margin-left: 45%;
   margin-top: 15px;
   padding: 15px;
-  border: 1px solid #f4eee7;
-  border-radius: 15px;
-  text-align: center;
 }
 
-a.call-us:hover,
+.call-us h4 {
+  margin: auto;
+  text-align: center;
+  width: fit-content;
+  font-size: 45px;
+  padding: 15px;
+  border: 2px solid #fe9400;
+  border-radius: 15px;
+}
+
+.call-us h4:hover {
+  background-color: #fe9400;
+  color: #fff;
+}
+
 a.call-us-summary:hover,
 a.call-us-body:hover {
   color: #fff;
@@ -195,13 +213,13 @@ img.carousel-img {
   margin-left: 38%;
   margin-top: 15px;
   padding: 15px;
-  border: 1px solid #000;
+  border: 2px solid #fe9400;
   border-radius: 15px;
 }
 
 .section-reviews {
   /* background-color: #eea66b; */
-  background-color: #fe9400;
+  background-color: #d57703;
   /* height: 800px; */
 }
 
@@ -254,7 +272,8 @@ p.review {
 }
 
 .section-summary {
-  background-color: #fe9400;
+  /* background-color: #fe9400; */
+  background-color: #d57703;
 }
 
 .four-points {
@@ -273,7 +292,6 @@ p.review {
 .one-point {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   margin-top: 60px;
 }
 
@@ -282,21 +300,24 @@ p.review {
 }
 
 .one-point i.fa-solid.fa-face-smile {
-  font-size: 30px;
+  font-size: 44px;
 }
 
 .one-point h3 {
   font-size: 40px;
   margin-left: 15px;
-  transform: translateY(-15%);
+  transform: translateY(-38%);
   text-align: center;
 }
 
 .point-description h6 {
-  margin-left: 9%;
+  margin-left: 11%;
   font-size: 23px;
-  transform: translateY(-15px);
-  text-align: center;
+  transform: translateY(-29px);
+}
+
+i.fa-solid {
+  font-size: 50px;
 }
 
 .call-us-four-points {
@@ -449,7 +470,7 @@ textarea.form-control {
 /* footer */
 
 footer {
-  background-color: #fe9400;
+  background-color: #d57703;
   /* margin-top: 50px; */
   /* display: flex; */
   color: #000000e6;
@@ -526,6 +547,7 @@ i.bi.bi-r-square {
 .firma a {
   text-decoration: none;
   color: inherit;
+  font-style: normal;
 }
 
 .firma a:hover {
@@ -538,6 +560,15 @@ i.bi.bi-r-square {
 
 .footer-logo-img {
   width: 80%;
+}
+
+.picweb {
+  text-align: center;
+  margin-top: -2%;
+}
+
+.picweb a:hover {
+  color: #fff;
 }
 
 .trade-gd-body {
@@ -620,37 +651,26 @@ i.bi.bi-r-square {
     color: #fff;
   }
 
-  .carosel-img {
-    height: 80vh;
-  }
-
   img.carousel-img {
     background-position: center;
+    height: 90vh;
   }
 
-  .banner-box.mobile-only {
-    display: flex;
-    align-items: center;
+  .banner-text {
+    width: 80%;
+    top: 30.5%;
   }
 
-  .banner-text.mobile-only {
-    width: 800px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .banner-text h2 {
+    font-size: 60px;
   }
 
-  .banner-text.mobile-only h1 {
-    margin-left: 0;
+  .banner-text h1 {
+    font-size: 80px;
+  }
+
+  .banner-text h3 {
     font-size: 50px;
-  }
-
-  .banner-text.mobile-only h3 {
-    margin-left: 15px;
-    font-size: 40px;
-    text-align: center;
   }
 
   .call-us {
@@ -658,7 +678,10 @@ i.bi.bi-r-square {
     margin-top: 40px;
     border: none;
     font-size: 55px;
-    border: 1px solid #fff;
+  }
+
+  .call-us h4 {
+    font-size: 60px;
   }
 
   .navbar {
@@ -669,11 +692,15 @@ i.bi.bi-r-square {
     font-size: 55px;
   }
 
-  img.logo {
+  /* img.logo {
     position: relative;
     width: 30%;
     top: 0;
     margin-left: -6%;
+  } */
+
+  .custom-mobile {
+    max-width: 900px;
   }
 
   .three-services {

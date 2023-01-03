@@ -5,19 +5,23 @@ footer
       .fourCols
         .copyright
          
+          | &copy; #{date} kvalitnamontaz.sk
+          //- i.bi.bi-telephone-fill
+          //-   a.developer(href='tel:+421908564435')  0908 564 435
+
           i.bi.bi-envelope-fill 
               a.developer(href='mailto:info@kvalitnamontaz.sk') info@kvalitnamontaz.sk
-          i.bi.bi-telephone-fill
-              a.developer(href='tel:+421908564435')  0908 564 435
-          | &copy; #{date} kvalitnamontaz.sk
-          i.bi.bi-code-square  
-            a.developer(href='https://pictusweb.sk' target='_blank') PICTUSWEB
-              p Development 
+          //- i.bi.bi-code-square  
+          //-   a.developer(href='https://pictusweb.sk' target='_blank') PICTUSWEB
+          //-     p Development 
       .fourCols
         .firma.contact
           p kvalitnamontaz.sk
-          p IČO:
-          p DIČ:
+          i.bi.bi-telephone-fill
+            a.developer(href='tel:+421908564435')  0908 564 435
+
+          //- p IČO:
+          //- p DIČ:
       .fourCols
         .firma
           i.bi.bi-r-square 
@@ -30,3 +34,6 @@ footer
         .footer-logo
           a(href='/')
             img.footer-logo-img(src='/public/img/TD-logo.png' alt='')
+    .picweb        
+      a.developer(href='https://pictusweb.sk' target='_blank') &#60;&#47;&#62; PICTUSWEB Development 
+              

@@ -16,7 +16,10 @@ const storageType = cookieStorage
 const consentPropertyName = 'jdc_consent'
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName)
 const saveToStorage = () => storageType.setItem(consentPropertyName, true)
-const dontSaveToStorage = () => storageType.setItem(consentPropertyName, false)
+const dontSaveToStorage = () => {
+  storageType.setItem(consentPropertyName, false)
+  // window['ga-disable-G-KGHK9P41X3'] = true
+}
 
 const win = window.location.pathname
 const home = '/'

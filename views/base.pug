@@ -2,7 +2,7 @@ doctype html
 html 
   head
    block head
-  // Google tag (gtag.js)
+  Google tag (gtag.js)
   script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-KGHK9P41X3')
   script.
     window.dataLayer = window.dataLayer || []
@@ -28,19 +28,22 @@ html
     
     #carouselExampleCaptions.carousel.slide(data-bs-ride='carousel')
       .carousel-inner
-        .banner-box.no-mobile
+        .banner-box
           .banner-text
             a(href='/')
               img.logo(src='/public/img/TD-logo.png')
-            h1 KVALITNÁ MONTÁŽ PODLAHY
-            h3 Všetky podlahárske práce v Bratislave a okolí
-            a.call-us(href='tel:+421908564435') Zavolať: 0908564435 
+            h2 KVALITNÁ MONTÁŽ 
+            h1 PODLAHY
+            h3 Všetky podlahárske práce 
+            h3 v Bratislave a okolí
+            a.call-us(href='tel:+421908564435')
+             h4 Volajte: 0908564435 
         img.carousel-img
-        .banner-box.mobile-only
-          .banner-text.mobile-only
-            h1 KVALITNÁ MONTÁŽ PODLAHY
-            h3 Všetky podlahárske práve v Bratislave a okolí
-            a.call-us(href='tel:+421908564435') Zavolať: 0908564435 
+        //- .banner-box.mobile-only
+        //-   .banner-text.mobile-only
+        //-     h1 KVALITNÁ MONTÁŽ PODLAHY
+        //-     h3 Všetky podlahárske práve v Bratislave a okolí
+        //-     a.call-us(href='tel:+421908564435') Volajte: 0908564435 
         //- img.carousel-img
         //- .carousel-item.active(data-bs-interval="7000")
           //- img.carousel-img(src='/public/img/stock-photo-man-installing-new-laminated-wooden-floor-206436007.jpg' alt='')
@@ -52,7 +55,8 @@ html
           
     #services  
     section.section-1
-      .container 
+      .container.custom-mobile 
+
         .three-services
           .service
             img(src='/public/img/stock-photo-planks-of-laminate-floor-and-tools-to-install-them-1331890628.jpg' alt='')
@@ -89,7 +93,7 @@ html
           p.stars ⭐️⭐️⭐️⭐️⭐️
           p.review Potreboval som osadiť nové dvere a dostal som tento kontakt. Spokojnosť po všetkých stránkach.    
     section.section-1
-      .container 
+      .container.custom-mobile 
         .three-services
           .service
             img(src='/public/img/stock-photo-the-master-installs-the-front-door-with-a-metal-box-to-them-inserts-white-plugs-into-the-door-1804591186.jpg' alt='')
