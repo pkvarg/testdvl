@@ -111,6 +111,17 @@ span.navbar-toggler-icon {
   text-transform: uppercase;
 }
 
+span.main-span {
+  font-family: 'Zilla Slab', serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+i.fa-sharp.fa-solid.fa-mobile-screen {
+  font-size: 40px;
+}
+
 .call-us h4:hover {
   background-color: #fe9400;
   color: #fff;
@@ -202,9 +213,10 @@ a.call-us-body:hover {
   cursor: pointer;
   color: #fff;
   font-size: 30px;
-  margin-left: 38%;
+  margin-left: 31%;
   margin-top: 15px;
   padding: 15px;
+  padding-top: 20px;
   border: 2px solid #fff;
   border-radius: 15px;
   text-transform: uppercase;
@@ -320,10 +332,11 @@ i.fa-solid {
   cursor: pointer;
   color: #fff;
   font-size: 30px;
-  margin-left: 38%;
+  margin-left: 32%;
   margin-top: 0px;
   margin-bottom: 120px;
   padding: 15px;
+  padding-top: 20px;
   border: 1px solid #fff;
   border-radius: 15px;
   background-color: #039f2f;
@@ -341,10 +354,11 @@ a.call-us-four-points:hover {
   cursor: pointer;
   color: #fff;
   font-size: 30px;
-  margin-left: 38%;
+  margin-left: 32%;
   margin-top: 5%;
   margin-bottom: 120px;
   padding: 15px;
+  padding-top: 20px;
   border: 1px solid #fff;
   border-radius: 15px;
   background-color: #039f2f;
@@ -678,7 +692,7 @@ i.bi.bi-r-square {
   }
 
   .call-us h4 {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
 
   .navbar {
