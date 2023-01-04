@@ -16,6 +16,7 @@ const storageType = cookieStorage
 const consentPropertyName = 'jdc_consent'
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName)
 const saveToStorage = () => storageType.setItem(consentPropertyName, true)
+
 const dontSaveToStorage = () => {
   storageType.setItem(consentPropertyName, false)
   // window['ga-disable-G-KGHK9P41X3'] = true
@@ -42,7 +43,7 @@ if (win === home) {
     const declineBtn = document.getElementById('decline')
     acceptBtn.addEventListener('click', acceptFn)
     declineBtn.addEventListener('click', dontAcceptFn)
-    console.log(shouldShowPopup(storageType))
+    // console.log(shouldShowPopup(storageType))
     if (shouldShowPopup(storageType)) {
       setTimeout(() => {
         consentPopup.classList.remove('hidden')

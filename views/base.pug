@@ -2,12 +2,27 @@ doctype html
 html 
   head
    block head
+   
   script(async='' src='https://www.googletagmanager.com/gtag/js?id=G-KGHK9P41X3')
   script.
+    let cookie = document.cookie.split(';')
+    .map((cookie) => cookie.split('='))
+    .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {})
+    if(cookie.jdc_consent){
+    //- window.location.reload()  
     window.dataLayer = window.dataLayer || []
     function gtag(){dataLayer.push(arguments)}
     gtag('js', new Date())
     gtag('config', 'G-KGHK9P41X3')
+    }
+
+  //- script.
+  //-   window.dataLayer = window.dataLayer || []
+  //-   function gtag(){dataLayer.push(arguments)}
+  //-   gtag('js', new Date())
+  //-   gtag('config', 'G-KGHK9P41X3')
+  
+
     
   link(rel='shorcut icon' type='image/png' href='/public/img/wrenches.png')
   link(rel='stylesheet' href='/node_modules/bootstrap/dist/css/bootstrap.min.css')
@@ -185,9 +200,12 @@ html
 
   script(src="/node_modules/@popperjs/core/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous")
   script(src="/node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous")
-  
   script(src='/public/cookies.js') 
-
+  //- script.
+  //-   let cookie = document.cookie.split(';')
+  //-     .map((cookie) => cookie.split('='))
+  //-     .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value }), {})
+    //- console.log(cookie.jdc_consent)  
 
   
   
