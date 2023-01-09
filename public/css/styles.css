@@ -278,6 +278,23 @@ p.review {
   padding: 20px;
 }
 
+.second-three-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.second-three-sevices-title {
+  font-weight: 700;
+}
+
+i.bi.bi-chevron-compact-down {
+  color: #000000e6;
+  font-size: 150px;
+  font-weight: lighter !important;
+}
+
 .section-summary {
   /* background-color: #fe9400; */
   background-color: #d57703;
@@ -771,6 +788,12 @@ i.bi.bi-r-square {
 
   .section-summary {
     padding-bottom: 100px;
+  }
+
+  h1.second-three-sevices-title {
+    margin-top: 60px;
+    font-weight: 700;
+    font-size: 70px;
   }
 
   .four-points {
