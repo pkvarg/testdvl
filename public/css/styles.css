@@ -104,7 +104,7 @@ span.navbar-toggler-icon {
   width: fit-content;
   font-size: 45px;
   padding: 15px;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   border-radius: 15px;
   background-color: #039f2f;
   color: #fff;
@@ -194,7 +194,8 @@ a.call-us-body:hover {
 
 .service h2 {
   margin-top: 20px;
-  margin-left: 5px;
+  /* margin-left: 5px; */
+  margin-right: 10%;
   text-align: center;
 }
 
@@ -217,7 +218,7 @@ a.call-us-body:hover {
   margin-top: 15px;
   padding: 15px;
   padding-top: 20px;
-  border: 2px solid #fff;
+  /* border: 2px solid #fff; */
   border-radius: 15px;
   text-transform: uppercase;
   background-color: #039f2f;
@@ -337,7 +338,7 @@ i.fa-solid {
   margin-bottom: 120px;
   padding: 15px;
   padding-top: 20px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 15px;
   background-color: #039f2f;
   text-transform: uppercase;
@@ -359,7 +360,7 @@ a.call-us-four-points:hover {
   margin-bottom: 120px;
   padding: 15px;
   padding-top: 20px;
-  border: 1px solid #fff;
+  /* border: 1px solid #fff; */
   border-radius: 15px;
   background-color: #039f2f;
   text-transform: uppercase;
@@ -407,7 +408,7 @@ a.call-us-four-points:hover {
   background-color: #039f2f;
   color: #fff;
   font-size: 25px;
-  border-color: black;
+  /* border-color: black; */
   text-transform: uppercase;
 }
 .btn.btn-send:hover {
@@ -714,6 +715,7 @@ i.bi.bi-r-square {
   .service h2 {
     margin-top: 60px;
     margin-bottom: 30px;
+    margin-right: 0%;
     font-size: 60px;
   }
 
@@ -722,6 +724,7 @@ i.bi.bi-r-square {
     line-height: 60px;
     text-align: center;
     padding-bottom: 30px;
+    margin-left: 5%;
   }
 
   a.call-us-body {
@@ -731,7 +734,7 @@ i.bi.bi-r-square {
     justify-content: center;
     border: none;
     font-size: 55px;
-    border: 2px solid #fe9400;
+    /* border: 2px solid #fe9400; */
   }
 
   .review-cards {
@@ -849,7 +852,7 @@ i.bi.bi-r-square {
     margin-top: 15%;
     border: none;
     font-size: 55px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
 
   /* .sticky-lg-top {
