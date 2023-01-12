@@ -42,10 +42,6 @@ app.get('/tradeRules', (req, res) => {
   res.status(200).render('_tradeRules')
 })
 
-app.get('/projects', (req, res) => {
-  res.status(200).render('_projects')
-})
-
 app.get('/counter', (req, res) => {
   res.status(200).render('_counter', {
     counter: clicks,
@@ -91,7 +87,7 @@ app.post('/send', (req, res) => {
     let mailOptions = {
       from: `kvalitnamontaz.sk <${process.env.EMAIL_FROM}>`, // sender address
       to: `${req.body.email}`,
-      bcc: `info@kvalitnamontaz.sk`,
+      bcc: 'info@kvalitnamontaz.sk',
       // list of receivers
       subject: 'kvalitnamontaz.sk', // Subject line
       text: 'Hello world?', // plain text body
